@@ -1,8 +1,15 @@
 import os
 os.system('cls') #مسح المسارات التي تظهر في الكونسول
 
-def add_task(item): #
-    pass
+def add_task(): # add task to the list
+    # get task from user
+    task = input("Enter task: ")
+    # define task status
+    task_info = {"task":task,"completed":False}
+    # add task to the list of tasks
+    tasks.append(task_info)
+    print("Task added to the lsit successfuly")
+    
 def mark_task_complete():
     pass
 def view_tasks():
